@@ -1,7 +1,13 @@
-# Install and run the app:
+Installation
 
-$ npm i
+Clone this repo to your local machine: 
+
+$ npm install
+
 $ cd client
-$ npm i
-$ cd..
+
+$ npm install
+
+$ cd ..
+
 $ npm run crm
