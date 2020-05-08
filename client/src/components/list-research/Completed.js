@@ -24,7 +24,7 @@ class Completed extends Component {
             <h3>{research.name}</h3>
             <p>{research.company}</p>
             <p>{research.subject}</p>
-            <p>{moment(research.from).format("MMMM D, YYYY")} - {moment(research.to).format("MMMM D, YYYY")}</p>
+            <p>{moment(research.from).format("YYYY.MM.DD")} - {moment(research.to).format("YYYY.MM.DD")}</p>
             <Link to={`/research/${research._id}`} class="btn btn-info">
               Kutatás megtekintése
             </Link>

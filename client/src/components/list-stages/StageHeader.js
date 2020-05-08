@@ -15,7 +15,7 @@ class StageHeader extends Component {
           <div class="col-8 text-center">
             <div>
             <strong>Határidő: </strong> &nbsp;
-            {moment(stage.deadline).format("MMMM D, YYYY")}</div>&nbsp;
+            {moment(stage.deadline).format("YYYY.MM.DD")}</div>&nbsp;
             <strong>Munkafolyamat rövid leírása</strong><br/>
             {stage.desc}
           </div>

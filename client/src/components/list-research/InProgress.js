@@ -25,8 +25,8 @@ class InProgess extends Component {
             <p>{research.company}</p>
             <p>{research.subject}</p>
             <p>
-              {moment(research.from).format("MMMM D, YYYY")} -{" "}
-              {moment(research.to).format("MMMM D, YYYY")}
+              {moment(research.from).format("YYYY.MM.DD")} -{" "}
+              {moment(research.to).format("YYYY.MM.DD")}
             </p>
             <Link to={`/research/${research._id}`} 
             style={{ position: "absolute", bottom: "0", width: "75%" }}

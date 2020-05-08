@@ -31,7 +31,7 @@ class Tasks extends Component {
                 <td>{moment(task.date).format("MMMM D, YYYY")}</td>
                 <td>{task.desc}</td>
                 <td>
-                  <Link to={`/research/${task.research}`}>{task.research}</Link>
+                  <Link to={`/research/${task.research}`}>Megktekint</Link>
                 </td>
               </tr>
             ) : null}

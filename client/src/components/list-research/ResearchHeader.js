@@ -29,7 +29,7 @@ class ResearchHeader extends Component {
                     </h5>
                     <h5>
                       <strong>Időtartam: </strong>
-                      {moment(research.from).format("MMMM D, YYYY")}- {moment(research.to).format("MMMM D, YYYY")}
+                      {moment(research.from).format("YYYY.MM.DD")}- {moment(research.to).format("YYYY.MM.DD")}
                     </h5>
                   </div>
                 </div>

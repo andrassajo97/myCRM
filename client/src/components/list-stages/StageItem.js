@@ -25,7 +25,7 @@ class StageItem extends Component {
           </thead>
           <tbody>
             <tr>
-              <td>{moment(stage.deadline).format("MMMM D, YYYY")}</td>
+              <td>{moment(stage.deadline).format("YYYY.MM.DD")}</td>
               {stage.isCompleted ? <td>Igen</td> : <td>Nem</td>}
             </tr>
           </tbody>
