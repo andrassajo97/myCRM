@@ -9,12 +9,17 @@ class CommentFeed extends Component {
     let commentsContent;
 
     if (comments) {
-        commentsContent = comments.map((comment) => (
-        <CommentItem key={comment._id} comment={comment} id={id} stage_num={stage_num} />
+      commentsContent = comments.map((comment) => (
+        <CommentItem
+          key={comment._id}
+          comment={comment}
+          id={id}
+          stage_num={stage_num}
+        />
       ));
     }
 
-    return (<div className="col-12">{commentsContent}</div>)
+    return <div className="col-12">{commentsContent}</div>;
   }
 }
 

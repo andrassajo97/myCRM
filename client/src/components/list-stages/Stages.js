@@ -36,7 +36,7 @@ class Stages extends Component {
           </div>
         ));
       } else {
-        stageItems = <h4>Nincsenek munakfolyamatok...</h4>;
+        stageItems = <h4>Nincsenek munkafolyamatok...</h4>;
       }
     }
 

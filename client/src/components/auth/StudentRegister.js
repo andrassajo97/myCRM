@@ -26,7 +26,7 @@ class StudentRegister extends Component {
 
   componentDidMount() {
     if (this.props.auth.isAuthenticated) {
-      this.props.history.push("/studentDashboard");
+      this.props.history.push("/dashboard");
     }
   }
 
@@ -48,7 +48,7 @@ class StudentRegister extends Component {
       username: this.state.username,
       password: this.state.password,
       password2: this.state.password2,
-      isStudent: true
+      isStudent: true,
     };
 
     this.props.registerStudentUser(newUser, this.props.history);

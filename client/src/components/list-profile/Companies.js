@@ -32,7 +32,7 @@ class Companies extends Component {
           <div className="row">
             <div className="col-md-12">
               <h1 className="display-4 text-center">Cégek</h1>
-              <div className="col-12 row">
+              <div className="row col-12">
               {companyItems}
               </div>
             </div>

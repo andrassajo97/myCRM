@@ -60,10 +60,27 @@ router.get(
     Task.findById(req.params.id)
       .then((tasks) => res.json(tasks))
       .catch((err) =>
-        res
-          .status(404)
-          .json({ notasksfound: "Nincsenek feladatok" })
+        res.status(404).json({ notasksfound: "Nincsenek feladatok" })
       );
+  }
+);
+
+// @route   DELETE api/task
+// @desc    Delete the tasks from the past
+// @access  Private
+router.delete(
+  "/",
+  passport.authenticate("jwt", { session: false }),
+  (req, res) => {
+    Task.find()
+      .then((tasks) => {
+        tasks.map((task) => {
+          if (task.date.getDay() < new Date().getDay()) {
+            task.remove();
+          }
+        });
+      })
+      .then((tasks) => res.json(tasks));
   }
 );
 

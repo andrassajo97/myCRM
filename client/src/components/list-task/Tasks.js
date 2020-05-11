@@ -17,7 +17,7 @@ class Tasks extends Component {
 
     let Content;
 
-    tasks.sort((a, b) => (a.date > b.date ? 1 : -1))
+    tasks.sort((a, b) => (a.date > b.date ? 1 : -1));
 
     if (tasks === null || loading) {
       Content = <Spinner />;

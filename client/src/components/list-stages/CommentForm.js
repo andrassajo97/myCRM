@@ -1,15 +1,15 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
-import TextAreaFieldGroup from '../common/TextAreaFieldGroup';
-import { addComment } from '../../actions/stageActions';
+import React, { Component } from "react";
+import PropTypes from "prop-types";
+import { connect } from "react-redux";
+import TextAreaFieldGroup from "../common/TextAreaFieldGroup";
+import { addComment } from "../../actions/stageActions";
 
 class CommentForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      text: '',
-      errors: {}
+      text: "",
+      errors: {},
     };
 
     this.onChange = this.onChange.bind(this);
@@ -44,24 +44,24 @@ class CommentForm extends Component {
 
     return (
       <div className="container col-8 bg-info text-white mb-3">
-          <div className="card-header bg-info text-white">
-            <strong>Szólj hozzá...</strong>
-          </div>
-            <form onSubmit={this.onSubmit}>
-              <div className="form-group">
-                <TextAreaFieldGroup
-                  placeholder="Ide gépeljen"
-                  name="text"
-                  value={this.state.text}
-                  onChange={this.onChange}
-                  error={errors.text}
-                />
-              </div>
-              <button type="submit" className="btn btn-dark mb-3">
-                Küldés
-              </button>
-            </form>
+        <div className="card-header bg-info text-white">
+          <strong>Szólj hozzá...</strong>
         </div>
+        <form onSubmit={this.onSubmit}>
+          <div className="form-group">
+            <TextAreaFieldGroup
+              placeholder="Ide gépeljen"
+              name="text"
+              value={this.state.text}
+              onChange={this.onChange}
+              error={errors.text}
+            />
+          </div>
+          <button type="submit" className="btn btn-dark mb-3">
+            Küldés
+          </button>
+        </form>
+      </div>
     );
   }
 }
@@ -69,12 +69,12 @@ class CommentForm extends Component {
 CommentForm.propTypes = {
   addComment: PropTypes.func.isRequired,
   auth: PropTypes.object.isRequired,
-  errors: PropTypes.object.isRequired
+  errors: PropTypes.object.isRequired,
 };
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state) => ({
   auth: state.auth,
-  errors: state.errors
+  errors: state.errors,
 });
 
 export default connect(mapStateToProps, { addComment })(CommentForm);

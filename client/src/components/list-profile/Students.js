@@ -22,7 +22,7 @@ class Students extends Component {
           <StudentItem key={profile._id} profile={profile} />
         ));
       } else {
-        studentItems = <h4>Nincsenek diákok...</h4>;
+        studentItems = <h4>Nincsenek hallgatók...</h4>;
       }
     }
 
@@ -31,7 +31,7 @@ class Students extends Component {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <h1 className="display-4 text-center">Diákok</h1>
+              <h1 className="display-4 text-center">Hallgatók</h1>
               <div className="row col-12">
               {studentItems}
               </div>

@@ -25,14 +25,14 @@ class CompanyRegister extends Component {
   }
 
   componentDidMount() {
-    if(this.props.auth.isAuthenticated) {
-      this.props.history.push('/companyDashboard')
+    if (this.props.auth.isAuthenticated) {
+      this.props.history.push("/dashboard");
     }
   }
 
   componentWillReceiveProps(nextProps) {
-    if(nextProps.errors) {
-      this.setState({errors: nextProps.errors})
+    if (nextProps.errors) {
+      this.setState({ errors: nextProps.errors });
     }
   }
 
@@ -48,7 +48,7 @@ class CompanyRegister extends Component {
       username: this.state.username,
       password: this.state.password,
       password2: this.state.password2,
-      isStudent: false
+      isStudent: false,
     };
 
     this.props.registerCompanyUser(newUser, this.props.history);
@@ -126,12 +126,14 @@ class CompanyRegister extends Component {
 CompanyRegister.propTypes = {
   registerCompanyUser: PropTypes.func.isRequired,
   auth: PropTypes.object.isRequired,
-  errors: PropTypes.object.isRequired
-}
+  errors: PropTypes.object.isRequired,
+};
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state) => ({
   auth: state.auth,
-  errors: state.errors
+  errors: state.errors,
 });
 
-export default connect(mapStateToProps, { registerCompanyUser })(withRouter(CompanyRegister));
+export default connect(mapStateToProps, { registerCompanyUser })(
+  withRouter(CompanyRegister)
+);

@@ -76,8 +76,6 @@ router.get(
   "/completed",
   passport.authenticate("jwt", { session: false }),
   (req, res) => {
-    const isCompleted = req.body.isCompleted;
-
     Research.find({ isCompleted: true })
       .then((researches) => res.json(researches))
       .catch((err) =>
@@ -95,7 +93,6 @@ router.get(
   "/waitlist",
   passport.authenticate("jwt", { session: false }),
   (req, res) => {
-
     Research.find({ assigned: false })
       .then((researches) => res.json(researches))
       .catch((err) =>
@@ -113,7 +110,6 @@ router.get(
   "/in_progress",
   passport.authenticate("jwt", { session: false }),
   (req, res) => {
-
     Research.find({ assigned: true })
       .then((researches) => res.json(researches))
       .catch((err) =>
@@ -148,23 +144,7 @@ router.get(
   (req, res) => {
     const name = req.user.name;
 
-    Research.find({ $or:[ {'student': name}, {'company': name} ]})
-      .then((researches) => res.json(researches))
-      .catch((err) =>
-        res.status(404).json({ noresearchesfound: "Kutatások nem található" })
-      );
-  }
-);
-
-// @route   GET api/research/get/:name
-// @desc    Get research by name
-// @access  Private
-router.get(
-  "/get/:name",
-  passport.authenticate("jwt", { session: false }),
-  (req, res) => {
-
-    Research.findOne({ name: req.params.name })
+    Research.find({ $or: [{ student: name }, { company: name }] })
       .then((researches) => res.json(researches))
       .catch((err) =>
         res.status(404).json({ noresearchesfound: "Kutatások nem található" })
@@ -187,7 +167,7 @@ router.post(
     }
 
     Research.findById(req.params.id)
-      .then(research => {
+      .then((research) => {
         research.name = req.body.name;
         research.company = req.body.company;
         research.student = req.body.student;
@@ -198,12 +178,11 @@ router.post(
         research.desc = req.body.desc;
         research.isCompleted = req.body.isCompleted;
 
-        research
-          .save()
-          .then=(() => res.json(player))
-          .catch(err => res.status(400).json(err));
+        research.save().then = (() => res.json(player)).catch((err) =>
+          res.status(400).json(err)
+        );
       })
-      .catch(err => res.status(400).json(err));
+      .catch((err) => res.status(400).json(err));
   }
 );
 
@@ -218,7 +197,7 @@ router.post(
       Research.findById(req.params.id)
         .then((research) => {
           research.student = student.name;
-          research.studentID = req.user.id
+          research.studentID = req.user.id;
           research.assigned = true;
 
           research.save().then((research) => res.json(research));
@@ -275,7 +254,7 @@ router.post(
         deadline: req.body.deadline,
         isCompleted: req.body.isCompleted,
         company: research.company,
-        student: research.student
+        student: research.student,
       };
 
       //    Add to stage array

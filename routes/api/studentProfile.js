@@ -62,7 +62,7 @@ router.get(
   (req, res) => {
     const errors = {};
 
-    Student.findOne( { user: req.params.id })
+    Student.findOne({ user: req.params.id })
       .then((profile) => {
         if (!profile) {
           errors.noprofile = "Diák nem található!";
@@ -122,24 +122,30 @@ router.post(
 // @route   GET api/studentProfile/get/all
 // @desc    Get all student profiles
 // @access  Private
-router.get('/get/all', passport.authenticate("jwt", { session: false }), (req, res) => {
-  Student.find()
-    .then(students => {
-      if(!students) {
-        return res.status(404).json({ nostudents: "Nincsenek diákok!"})
-      }
+router.get(
+  "/get/all",
+  passport.authenticate("jwt", { session: false }),
+  (req, res) => {
+    Student.find()
+      .then((students) => {
+        if (!students) {
+          return res.status(404).json({ nostudents: "Nincsenek diákok!" });
+        }
 
-      res.json(students);
-    })
-    .catch(err => res.status(404).json({ nostudents: "Nincsenek diákok!"}))
-})
+        res.json(students);
+      })
+      .catch((err) =>
+        res.status(404).json({ nostudents: "Nincsenek diákok!" })
+      );
+  }
+);
 
 // @route   DELETE api/studentProfile
 // @desc    Delete user and profile
 // @access  Private
 router.delete(
-  '/',
-  passport.authenticate('jwt', { session: false }),
+  "/",
+  passport.authenticate("jwt", { session: false }),
   (req, res) => {
     Student.findOneAndRemove({ user: req.user.id }).then(() => {
       User.findOneAndRemove({ _id: req.user.id }).then(() =>

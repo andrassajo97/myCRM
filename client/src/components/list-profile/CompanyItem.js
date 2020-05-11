@@ -7,14 +7,14 @@ class CompanyItem extends Component {
     const { profile } = this.props;
 
     return (
-    <div class="row card col-3 card-body bg-light mb-3 text-center m-3">
+      <div class="col-3 row card card-body bg-light mb-3 text-center m-3">
         <h3>{profile.name}</h3>
         <p>{profile.fieldofResearch}</p>
         <p>{profile.city}</p>
         <Link to={`/companyProfile/${profile.user}`} class="btn btn-info">
           Profil megtekintése
         </Link>
-    </div>
+      </div>
     );
   }
 }

@@ -112,20 +112,20 @@ export const addComment = (researchID, num, commentData) => (dispatch) => {
 // Delete Comment
 export const deleteComment = (researchID, num, commentID) => (dispatch) => {
   if (window.confirm("Biztos benne, hogy törli a kommentet?")) {
-  axios
-    .delete(`/api/research/${researchID}/stage/${num}/comment/${commentID}`)
-    .then((res) => {
-      dispatch({
-        type: GET_STAGE,
-        payload: res.data,
+    axios
+      .delete(`/api/research/${researchID}/stage/${num}/comment/${commentID}`)
+      .then((res) => {
+        dispatch({
+          type: GET_STAGE,
+          payload: res.data,
+        });
       })
-    })
-    .catch((err) =>
-      dispatch({
-        type: GET_ERRORS,
-        payload: err.response.data,
-      })
-    );
+      .catch((err) =>
+        dispatch({
+          type: GET_ERRORS,
+          payload: err.response.data,
+        })
+      );
   }
 };
 

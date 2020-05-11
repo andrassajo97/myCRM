@@ -18,20 +18,18 @@ class Footer extends Component {
       </footer>
     );
 
-    const guestLinks = (
-        <div></div>
-    );
+    const guestLinks = <div></div>;
 
     return <div>{isAuthenticated ? authLinks : guestLinks}</div>;
   }
 }
 
 Footer.propTypes = {
-    auth: PropTypes.object.isRequired
-  }
+  auth: PropTypes.object.isRequired,
+};
 
-  const mapStatetoProps = (state) => ({
-    auth: state.auth
-  })
+const mapStatetoProps = (state) => ({
+  auth: state.auth,
+});
 
-  export default connect(mapStatetoProps, {})(Footer);
+export default connect(mapStatetoProps, {})(Footer);

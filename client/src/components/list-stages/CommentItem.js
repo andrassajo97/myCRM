@@ -16,8 +16,7 @@ class CommentItem extends Component {
       <div className="container col-8 card mb-3">
         <div className="row">
           <div className="col-2">
-            <a href="profile.html">
-            </a>
+            <a href="profile.html"></a>
             <br />
             <p className="text-center">{comment.name}</p>
           </div>
@@ -25,7 +24,12 @@ class CommentItem extends Component {
             <p className="lead">{comment.text}</p>
             {comment.name === user.name ? (
               <button
-                onClick={this.onDeleteClick.bind(this, id, stage_num, comment._id)}
+                onClick={this.onDeleteClick.bind(
+                  this,
+                  id,
+                  stage_num,
+                  comment._id
+                )}
                 className="btn btn-danger"
               >
                 Törlés

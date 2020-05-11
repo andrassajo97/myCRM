@@ -16,13 +16,13 @@ class Stage extends Component {
       this.props.match.params.num
     );
 
-    this.props.getResearch(this.props.match.params.id)
+    this.props.getResearch(this.props.match.params.id);
   }
 
   render() {
     const { stage, loading } = this.props.stage;
     const { user } = this.props.auth;
-    const { research } = this.props.research
+    const { research } = this.props.research;
 
     let stageContent;
 
@@ -48,9 +48,17 @@ class Stage extends Component {
             </div>
           </div>
           <StageHeader stage={stage} />
-          {user.name === research.company || user.name === research.student ? 
-          <CommentForm id={this.props.match.params.id} stage_num={stage.num} /> : null}
-          <CommentFeed id={this.props.match.params.id} stage_num={stage.num} comments={stage.comments} />
+          {user.name === research.company || user.name === research.student ? (
+            <CommentForm
+              id={this.props.match.params.id}
+              stage_num={stage.num}
+            />
+          ) : null}
+          <CommentFeed
+            id={this.props.match.params.id}
+            stage_num={stage.num}
+            comments={stage.comments}
+          />
         </div>
       );
     }
@@ -64,15 +72,13 @@ Stage.propTypes = {
   getResearch: PropTypes.func.isRequired,
   stage: PropTypes.object.isRequired,
   auth: PropTypes.object.isRequired,
-  research: PropTypes.object.isRequired
+  research: PropTypes.object.isRequired,
 };
 
 const mapStateToProps = (state) => ({
   stage: state.stage,
   auth: state.auth,
-  research: state.research
+  research: state.research,
 });
 
-export default connect(mapStateToProps, { getStage, getResearch })(
-  Stage
-);
+export default connect(mapStateToProps, { getStage, getResearch })(Stage);

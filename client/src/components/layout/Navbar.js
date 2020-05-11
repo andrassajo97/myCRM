@@ -95,10 +95,7 @@ class Navbar extends Component {
                       Teendők
                     </Link>
                     <div className="dropdown-menu" aria-labelledby="dropdown01">
-                      <Link
-                        className="dropdown-item"
-                        to="/tasks"
-                      >
+                      <Link className="dropdown-item" to="/tasks">
                         Megtekintés
                       </Link>
                       <Link className="dropdown-item" to="/add-task">
@@ -193,10 +190,7 @@ class Navbar extends Component {
                       Teendők
                     </Link>
                     <div className="dropdown-menu" aria-labelledby="dropdown01">
-                      <Link
-                        className="dropdown-item"
-                        to="/tasks"
-                      >
+                      <Link className="dropdown-item" to="/tasks">
                         Megtekintés
                       </Link>
                       <Link className="dropdown-item" to="/add-task">

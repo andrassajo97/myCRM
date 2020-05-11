@@ -179,7 +179,7 @@ class CreateStudentProfile extends Component {
 }
 
 CreateStudentProfile.propTypes = {
-    create_StudentProfile: PropTypes.func.isRequired,
+  create_StudentProfile: PropTypes.func.isRequired,
   profile: PropTypes.object.isRequired,
   errors: PropTypes.object.isRequired,
 };

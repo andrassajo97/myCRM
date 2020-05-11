@@ -1,18 +1,18 @@
 import React, { Component } from "react";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
-import { connect } from 'react-redux';
+import { connect } from "react-redux";
 
 class Landing extends Component {
   render() {
     const { isAuthenticated } = this.props.auth;
 
-    const authLinks = (<div></div>);
+    const authLinks = <div></div>;
 
     const guestLinks = (
       <div
         className="landing d-flex align-items-center justify-content-center"
-        style={{height: "100vh"}}
+        style={{ height: "100vh" }}
       >
         <div className="p-5">
           <Link
@@ -41,21 +41,18 @@ class Landing extends Component {
           </Link>
         </div>
       </div>
-    )
-
-    return (
-    <div>{isAuthenticated? authLinks : guestLinks}</div>
     );
+
+    return <div>{isAuthenticated ? authLinks : guestLinks}</div>;
   }
 }
 
 Landing.propTypes = {
-  auth: PropTypes.object.isRequired
-}
+  auth: PropTypes.object.isRequired,
+};
 
 const mapStatetoProps = (state) => ({
-  auth: state.auth
-})
+  auth: state.auth,
+});
 
 export default connect(mapStatetoProps, {})(Landing);
-

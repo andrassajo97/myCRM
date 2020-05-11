@@ -25,14 +25,14 @@ router.post("/register", (req, res) => {
 
   User.findOne({ username: req.body.username }).then((user) => {
     if (user) {
-      errors.username = "Felhasználónév foglalt"
+      errors.username = "Felhasználónév foglalt";
       return res.status(400).json(errors);
     } else {
       const newUser = new User({
         name: req.body.name,
         username: req.body.username,
         password: req.body.password,
-        isStudent: req.body.isStudent
+        isStudent: req.body.isStudent,
       });
 
       bcrypt.genSalt(10, (err, salt) => {
@@ -76,7 +76,12 @@ router.post("/login", (req, res) => {
       if (isMatch) {
         // User matched
 
-        const payload = { id: user.id, name: user.name, username: user.username, isStudent: user.isStudent }; // Create JWT Payload
+        const payload = {
+          id: user.id,
+          name: user.name,
+          username: user.username,
+          isStudent: user.isStudent,
+        }; // Create JWT Payload
 
         // Sign token
         jwt.sign(
@@ -109,7 +114,7 @@ router.get(
       id: req.user.id,
       name: req.user.name,
       username: req.user.username,
-      isStudent: req.user.isStudent
+      isStudent: req.user.isStudent,
     });
   }
 );

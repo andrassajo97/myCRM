@@ -1,0 +1,158 @@
+Date : 2020-05-10 23:29:41
+Directory : c:\Users\andra\web-apps\proba\myCRM
+Total : 100 files,  24345 codes, 339 comments, 837 blanks, all 25521 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| JSON       |          4 |     17,565 |          0 |          4 |     17,569 |
+| JavaScript |         88 |      6,424 |        337 |        783 |      7,544 |
+| XML        |          3 |        214 |          2 |          2 |        218 |
+| CSS        |          2 |         59 |          0 |          5 |         64 |
+| Markdown   |          2 |         45 |          0 |         40 |         85 |
+| HTML       |          1 |         38 |          0 |          3 |         41 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++--------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                             | files      | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                |        100 |     24,345 |        339 |        837 |     25,521 |
+| client                                                                                           |         74 |     21,060 |        134 |        620 |     21,814 |
+| client\public                                                                                    |          1 |         38 |          0 |          3 |         41 |
+| client\src                                                                                       |         70 |      5,513 |        134 |        583 |      6,230 |
+| client\src\actions                                                                               |          6 |        678 |         64 |         56 |        798 |
+| client\src\components                                                                            |         44 |      3,979 |         20 |        466 |      4,465 |
+| client\src\components\add-research                                                               |          1 |        184 |          3 |         19 |        206 |
+| client\src\components\add-stage                                                                  |          1 |        101 |          0 |         13 |        114 |
+| client\src\components\add-task                                                                   |          1 |        157 |          1 |         19 |        177 |
+| client\src\components\auth                                                                       |          4 |        457 |          0 |         66 |        523 |
+| client\src\components\common                                                                     |          5 |        153 |          0 |         21 |        174 |
+| client\src\components\create-profile                                                             |          2 |        326 |          1 |         29 |        356 |
+| client\src\components\dashboard                                                                  |          3 |        435 |          4 |         35 |        474 |
+| client\src\components\edit-profile                                                               |          2 |        383 |          5 |         37 |        425 |
+| client\src\components\edit-research                                                              |          1 |        194 |          3 |         20 |        217 |
+| client\src\components\edit-stage                                                                 |          1 |        135 |          3 |         18 |        156 |
+| client\src\components\layout                                                                     |          3 |        314 |          0 |         25 |        339 |
+| client\src\components\list-profile                                                               |          6 |        318 |          0 |         46 |        364 |
+| client\src\components\list-research                                                              |          6 |        402 |          0 |         48 |        450 |
+| client\src\components\list-stages                                                                |          7 |        354 |          0 |         60 |        414 |
+| client\src\components\list-task                                                                  |          1 |         66 |          0 |         10 |         76 |
+| client\src\img                                                                                   |          3 |        214 |          2 |          2 |        218 |
+| client\src\reducers                                                                              |          7 |        221 |          0 |         18 |        239 |
+| client\src\util                                                                                  |          1 |          9 |          2 |          2 |         13 |
+| client\src\validation                                                                            |          1 |          6 |          0 |          2 |          8 |
+| config                                                                                           |          4 |         36 |          0 |          5 |         41 |
+| routes                                                                                           |         10 |        894 |        199 |        122 |      1,215 |
+| routes\api                                                                                       |          5 |        679 |        194 |        107 |        980 |
+| routes\models                                                                                    |          5 |        215 |          5 |         15 |        235 |
+| validation                                                                                       |          8 |        224 |          0 |         69 |        293 |
++--------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++--------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                                         | language   | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| c:\Users\andra\web-apps\proba\myCRM\README.md                                                    | Markdown   |          8 |          0 |          8 |         16 |
+| c:\Users\andra\web-apps\proba\myCRM\client\README.md                                             | Markdown   |         37 |          0 |         32 |         69 |
+| c:\Users\andra\web-apps\proba\myCRM\client\package-lock.json                                     | JSON       |     15,428 |          0 |          1 |     15,429 |
+| c:\Users\andra\web-apps\proba\myCRM\client\package.json                                          | JSON       |         44 |          0 |          1 |         45 |
+| c:\Users\andra\web-apps\proba\myCRM\client\public\index.html                                     | HTML       |         38 |          0 |          3 |         41 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\App.css                                           | CSS        |         47 |          0 |          3 |         50 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\App.js                                            | JavaScript |        214 |          8 |          8 |        230 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\App.test.js                                       | JavaScript |          8 |          0 |          2 |         10 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\actions\authActions.js                            | JavaScript |         71 |         19 |          8 |         98 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\actions\profileActions.js                         | JavaScript |        185 |         13 |         16 |        214 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\actions\researchActions.js                        | JavaScript |        207 |         13 |         15 |        235 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\actions\stageActions.js                           | JavaScript |        127 |          8 |         10 |        145 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\actions\taskActions.js                            | JavaScript |         65 |         11 |          7 |         83 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\actions\types.js                                  | JavaScript |         23 |          0 |          0 |         23 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\components\add-research\AddResearch.js            | JavaScript |        184 |          3 |         19 |        206 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\components\add-stage\StageForm.js                 | JavaScript |        101 |          0 |         13 |        114 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\components\add-task\AddTask.js                    | JavaScript |        157 |          1 |         19 |        177 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\components\auth\CompanyLogin.js                   | JavaScript |        105 |          0 |         17 |        122 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\components\auth\CompanyRegister.js                | JavaScript |        122 |          0 |         16 |        138 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\components\auth\StudentLogin.js                   | JavaScript |        104 |          0 |         17 |        121 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\components\auth\StudentRegister.js                | JavaScript |        126 |          0 |         16 |        142 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\components\common\PrivateRoute.js                 | JavaScript |         23 |          0 |          5 |         28 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\components\common\SelectListGroup.js              | JavaScript |         41 |          0 |          5 |         46 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\components\common\Spinner.js                      | JavaScript |         13 |          0 |          2 |         15 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\components\common\TextAreaFieldGroup.js           | JavaScript |         35 |          0 |          4 |         39 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\components\common\TextFieldGroup.js               | JavaScript |         41 |          0 |          5 |         46 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\components\create-profile\CreateCompanyProfile.js | JavaScript |        147 |          0 |         14 |        161 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\components\create-profile\CreateStudentProfile.js | JavaScript |        179 |          1 |         15 |        195 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\components\dashboard\CompanyDashboard.js          | JavaScript |        199 |          2 |         14 |        215 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\components\dashboard\Dashboard.js                 | JavaScript |         37 |          0 |          7 |         44 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\components\dashboard\StudentDashboard.js          | JavaScript |        199 |          2 |         14 |        215 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\components\edit-profile\EditCompanyProfile.js     | JavaScript |        171 |          2 |         18 |        191 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\components\edit-profile\EditStudentProfile.js     | JavaScript |        212 |          3 |         19 |        234 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\components\edit-research\EditResearch.js          | JavaScript |        194 |          3 |         20 |        217 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\components\edit-stage\EditStage.js                | JavaScript |        135 |          3 |         18 |        156 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\components\layout\Footer.js                       | JavaScript |         31 |          0 |          7 |         38 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\components\layout\Landing.js                      | JavaScript |         53 |          0 |          9 |         62 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\components\layout\Navbar.js                       | JavaScript |        230 |          0 |          9 |        239 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\components\list-profile\Companies.js              | JavaScript |         48 |          0 |          8 |         56 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\components\list-profile\CompanyItem.js            | JavaScript |         22 |          0 |          5 |         27 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\components\list-profile\CompanyProfile.js         | JavaScript |         87 |          0 |         10 |         97 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\components\list-profile\StudentItem.js            | JavaScript |         22 |          0 |          5 |         27 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\components\list-profile\StudentProfile.js         | JavaScript |         91 |          0 |         10 |        101 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\components\list-profile\Students.js               | JavaScript |         48 |          0 |          8 |         56 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\components\list-research\Completed.js             | JavaScript |         57 |          0 |          8 |         65 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\components\list-research\InProgress.js            | JavaScript |         62 |          0 |          8 |         70 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\components\list-research\Research.js              | JavaScript |         99 |          0 |         10 |        109 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\components\list-research\ResearchAssignees.js     | JavaScript |         75 |          0 |         10 |         85 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\components\list-research\ResearchHeader.js        | JavaScript |         45 |          0 |          4 |         49 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\components\list-research\Waitlist.js              | JavaScript |         64 |          0 |          8 |         72 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\components\list-stages\CommentFeed.js             | JavaScript |         21 |          0 |          7 |         28 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\components\list-stages\CommentForm.js             | JavaScript |         67 |          0 |         14 |         81 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\components\list-stages\CommentItem.js             | JavaScript |         46 |          0 |          7 |         53 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\components\list-stages\Stage.js                   | JavaScript |         69 |          0 |         10 |         79 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\components\list-stages\StageHeader.js             | JavaScript |         28 |          0 |          5 |         33 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\components\list-stages\StageItem.js               | JavaScript |         52 |          0 |          7 |         59 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\components\list-stages\Stages.js                  | JavaScript |         71 |          0 |         10 |         81 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\components\list-task\Tasks.js                     | JavaScript |         66 |          0 |         10 |         76 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\img\arrow.svg                                     | XML        |         38 |          1 |          1 |         40 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\img\student.svg                                   | XML        |        175 |          1 |          1 |        177 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\img\work.svg                                      | XML        |          1 |          0 |          0 |          1 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\index.css                                         | CSS        |         12 |          0 |          2 |         14 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\index.js                                          | JavaScript |         12 |          3 |          3 |         18 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\reducers\authReducer.js                           | JavaScript |         18 |          0 |          2 |         20 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\reducers\errorReducer.js                          | JavaScript |         12 |          0 |          3 |         15 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\reducers\index.js                                 | JavaScript |         15 |          0 |          1 |         16 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\reducers\profileReducer.js                        | JavaScript |         39 |          0 |          3 |         42 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\reducers\researchReducer.js                       | JavaScript |         53 |          0 |          3 |         56 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\reducers\stageReducer.js                          | JavaScript |         45 |          0 |          3 |         48 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\reducers\taskReducer.js                           | JavaScript |         39 |          0 |          3 |         42 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\serviceWorker.js                                  | JavaScript |         98 |         31 |         13 |        142 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\setupTests.js                                     | JavaScript |          1 |          4 |          1 |          6 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\store.js                                          | JavaScript |         14 |          0 |          5 |         19 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\util\setAuthToken.js                              | JavaScript |          9 |          2 |          2 |         13 |
+| c:\Users\andra\web-apps\proba\myCRM\client\src\validation\is-empty.js                            | JavaScript |          6 |          0 |          2 |          8 |
+| c:\Users\andra\web-apps\proba\myCRM\config\keys.js                                               | JavaScript |          5 |          0 |          0 |          5 |
+| c:\Users\andra\web-apps\proba\myCRM\config\keys_dev.js                                           | JavaScript |          5 |          0 |          1 |          6 |
+| c:\Users\andra\web-apps\proba\myCRM\config\keys_prod.js                                          | JavaScript |          4 |          0 |          1 |          5 |
+| c:\Users\andra\web-apps\proba\myCRM\config\passport.js                                           | JavaScript |         22 |          0 |          3 |         25 |
+| c:\Users\andra\web-apps\proba\myCRM\package-lock.json                                            | JSON       |      2,064 |          0 |          1 |      2,065 |
+| c:\Users\andra\web-apps\proba\myCRM\package.json                                                 | JSON       |         29 |          0 |          1 |         30 |
+| c:\Users\andra\web-apps\proba\myCRM\routes\api\companyProfile.js                                 | JavaScript |         92 |         43 |         16 |        151 |
+| c:\Users\andra\web-apps\proba\myCRM\routes\api\research.js                                       | JavaScript |        337 |         75 |         47 |        459 |
+| c:\Users\andra\web-apps\proba\myCRM\routes\api\studentProfile.js                                 | JavaScript |         99 |         43 |         17 |        159 |
+| c:\Users\andra\web-apps\proba\myCRM\routes\api\task.js                                           | JavaScript |         62 |         15 |         11 |         88 |
+| c:\Users\andra\web-apps\proba\myCRM\routes\api\users.js                                          | JavaScript |         89 |         18 |         16 |        123 |
+| c:\Users\andra\web-apps\proba\myCRM\routes\models\Company.js                                     | JavaScript |         37 |          1 |          3 |         41 |
+| c:\Users\andra\web-apps\proba\myCRM\routes\models\Research.js                                    | JavaScript |         87 |          1 |          3 |         91 |
+| c:\Users\andra\web-apps\proba\myCRM\routes\models\Student.js                                     | JavaScript |         45 |          1 |          3 |         49 |
+| c:\Users\andra\web-apps\proba\myCRM\routes\models\Task.js                                        | JavaScript |         25 |          1 |          3 |         29 |
+| c:\Users\andra\web-apps\proba\myCRM\routes\models\User.js                                        | JavaScript |         21 |          1 |          3 |         25 |
+| c:\Users\andra\web-apps\proba\myCRM\server.js                                                    | JavaScript |         30 |          6 |         11 |         47 |
+| c:\Users\andra\web-apps\proba\myCRM\validation\companyProfile.js                                 | JavaScript |         39 |          0 |         11 |         50 |
+| c:\Users\andra\web-apps\proba\myCRM\validation\is-empty.js                                       | JavaScript |          6 |          0 |          2 |          8 |
+| c:\Users\andra\web-apps\proba\myCRM\validation\login.js                                          | JavaScript |         17 |          0 |          6 |         23 |
+| c:\Users\andra\web-apps\proba\myCRM\validation\register.js                                       | JavaScript |         35 |          0 |         11 |         46 |
+| c:\Users\andra\web-apps\proba\myCRM\validation\research.js                                       | JavaScript |         33 |          0 |         10 |         43 |
+| c:\Users\andra\web-apps\proba\myCRM\validation\stage.js                                          | JavaScript |         21 |          0 |          7 |         28 |
+| c:\Users\andra\web-apps\proba\myCRM\validation\studentProfile.js                                 | JavaScript |         48 |          0 |         14 |         62 |
+| c:\Users\andra\web-apps\proba\myCRM\validation\task.js                                           | JavaScript |         25 |          0 |          8 |         33 |
+| Total                                                                                            |            |     24,345 |        339 |        837 |     25,521 |
++--------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
